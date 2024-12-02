@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  @font-face {
+    font-family: "Motrix";
+    src: url(../fonts/MontserratAlternates-ExtraLightItalic.ttf);
+  }
+    @font-face {
+    font-family: "Oswald";
+    src: url(../fonts/Oswald-VariableFont_wght.ttf);
+  }
+}
+.animation-modal {
+  margin-top: -80px;
+  opacity: 0;
+  animation: modal 0.5s forwards;
+}
+
+@keyframes modal {
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
